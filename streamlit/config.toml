@@ -1,0 +1,31 @@
+[client]
+# Contrôle si les exceptions d'application non capturées et les avertissements de dépréciation
+# sont affichés dans le navigateur. Par défaut, la valeur est True et
+# Streamlit affiche les exceptions de l'application et les tracesbacks associées, et
+# et les avertissements de dépréciation dans le navigateur.
+# Si cette valeur est fixée à False, les avertissements de dépréciation et les messages d'exception complets # s'afficheront uniquement sur la console.
+# seront imprimés sur la console uniquement. Les exceptions s'afficheront toujours dans le # navigateur avec un message d'erreur générique.
+# navigateur avec un message d'erreur générique. Pour l'instant, le type d'exception et
+# s'affichent également dans le navigateur, mais ils seront supprimés à l'avenir.
+# dans le futur.
+# Default: true
+showErrorDetails = true
+
+# Modifier la visibilité des éléments de la barre d'outils, du menu d'options et de la boîte de dialogue des paramètres (en haut à droite de l'application),
+# et de la boîte de dialogue des paramètres (en haut à droite de l'application).
+# Valeurs autorisées :
+# * "auto" : Afficher les options du développeur si l'application est accédée via
+# localhost ou via Streamlit Community Cloud en tant que développeur.
+# Cachez-les dans le cas contraire.
+# * "developer" : Afficher les options développeur.
+# * "viewer" : Cacher les options développeur.
+# * "minimal" : Afficher uniquement les options définies en externe (par exemple via
+# Streamlit Community Cloud) ou par st.set_page_config.
+# S'il n'y a plus d'options, cacher le menu.
+toolbarMode = "auto"
+
+# Contrôle l'affichage ou non de la barre latérale de navigation par défaut dans une application multi-pages.
+# dans une application multi-pages. Ceci ne s'applique que lorsque les pages de l'application sont définies par le répertoire
+# le répertoire `pages/`.
+# Default: true
+showSidebarNavigation = false
